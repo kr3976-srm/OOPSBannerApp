@@ -1,29 +1,33 @@
 /**
  * OOPSBannerApp
  *
- * UC1: Print the literal text "OOPS" to the console.
- *
- * This is the entry point of the application.
+ * UC4: Display OOPS banner using String array and loop
  *
  * @author kr3976
  * @version 1.0
  */
 public class OOPSBannerApp {
 
-    /**
-     * Main method - entry point of Java application
-     * @param args command line arguments
-     */
-public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    System.out.println(String.join(" ", "*****", "*****", "*****", " ****"));
-    System.out.println(String.join(" ", "*   *", "*   *", "*   *", "*    "));
-    System.out.println(String.join(" ", "*   *", "*   *", "*   *", "*    "));
-    System.out.println(String.join(" ", "*   *", "*   *", "*****", " ****"));
-    System.out.println(String.join(" ", "*   *", "*   *", "*    ", "    *"));
-    System.out.println(String.join(" ", "*   *", "*   *", "*    ", "    *"));
-    System.out.println(String.join(" ", "*****", "*****", "*    ", "**** "));
+        // Store banner lines in String array
+        String[] banner = {
 
-}
+            String.join(" ", "*****", "*****", "*****", "*****"),
+            String.join(" ", "*   *", "*   *", "*   *", "*    "),
+            String.join(" ", "*   *", "*   *", "*   *", "*    "),
+            String.join(" ", "*   *", "*   *", "*****", "*****"),
+            String.join(" ", "*   *", "*   *", "*    ", "    *"),
+            String.join(" ", "*   *", "*   *", "*    ", "    *"),
+            String.join(" ", "*****", "*****", "*    ", "*****")
+
+        };
+
+        // Print banner using loop
+        for (String line : banner) {
+            System.out.println(line);
+        }
+
+    }
 
 }
