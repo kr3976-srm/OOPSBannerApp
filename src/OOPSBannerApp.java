@@ -15,9 +15,13 @@ public class OOPSBannerApp {
      * @param args command line arguments
      */
     public static void main(String[] args) {
-
-        // Print OOPS message
-        System.out.println("OOPS");
+        System.out.println(" *****   *****   *****   ***** ");
+        System.out.println("*     * *     * *     * *       ");
+        System.out.println("*     * *     * *     * *       ");
+        System.out.println("*     * *     *  *****   *****   ");
+        System.out.println("*     * *     * *             *   ");
+        System.out.println("*     * *     * *             *   ");
+        System.out.println(" *****   *****  *        *****   ");
 
     }
 
